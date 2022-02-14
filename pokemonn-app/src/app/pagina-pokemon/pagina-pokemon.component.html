@@ -1,0 +1,70 @@
+<app-menu></app-menu>
+<div class="body">
+    <div class="container-pokemon" id="cor-container">
+        <div class="imagem-pokemon">
+            <h1 class="nome-pokemon"> {{ nome }} </h1>
+            <br>
+            <img src={{slides[x]}}>
+            <br>
+            <br>
+            <div class="botao-container">
+                <button (click)='getPrev(slides)'> < </button> &nbsp;
+                <button class="botao-aleatorio" (click)="pokemonAleatorio()">Pokémon Aleatório</button> &nbsp;
+                <button (click)='getNext(slides)'> > </button>
+            </div>
+        </div>
+        <div class="descricao-pokemon">
+            <div class="status-pokemon">
+                <div class="status" id="info-hp">
+                    <p class="info-status">HP</p>
+                    <br>
+                    <p class="info-status-forc">{{hp}}</p>
+                </div>
+                <div class="status" id="info-ataque">
+                    <p class="info-status">Ataque</p>
+                    <br>
+                    <p class="info-status-forc">{{ataque}}</p>
+                </div>
+                <div class="status" id="info-defesa">
+                    <p class="info-status">Defesa</p>
+                    <br>
+                    <p class="info-status-forc">{{defesa}}</p>
+                </div>
+            </div>
+            <br>
+            <span>Tipo: </span>        
+            <span class="info-pok" id="desc-pokemon">{{tipo}}
+            </span>
+            <br>
+            <span>Altura: </span>        
+            <span class="info-pok" id="desc-pokemon">{{altura}}
+            </span>
+            <br>
+            <span>Habilidades: </span>
+            <span class="info-pok" *ngFor="let habilidade of habilidades">
+                    {{habilidade.ability.name}};
+            </span>
+            <br>
+            <span>Peso: </span>
+            <span class="info-pok" id="peso-pokemon">
+                {{peso}}
+            </span>
+            <br>
+        <span>Experiencia: </span>
+        <span class="info-pok" id="fraq-pokemon">
+            {{exp}}
+        </span>
+        <br>
+        <span>Local: </span><br>
+        <div class="locais">
+            <span class="info-pok" *ngIf="locals == 0">
+                <p>Sem informações da localização</p>
+            </span>
+            <span class="info-pok" *ngFor="let local of locals">
+                {{local.location_area.name}} <br>
+            </span>
+        </div>
+        <br>
+    </div>
+</div>
+</div>

@@ -1,0 +1,91 @@
+app-menu{
+    width: 30%;
+    position: fixed;
+    float: left;
+}
+
+.body{
+    width: 70%;
+    float: right;
+}
+
+.nome-container{
+    padding: 1% 2.5%;
+}
+
+.consulta-conteiner{
+    background-color: rgb(255, 196, 0);
+    padding: 1% 2.5%;
+    height: 7.5vh;
+}
+
+.consulta-conteiner label{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.consulta-conteiner .input-form{
+    background-color: rgb(255, 196, 0);
+    font-size: 30px;
+    width: 300px;
+    height: 30px;
+    border: 0;
+    border-bottom: 2px solid black;
+}
+
+.consulta-conteiner .botoes-consulta-conteiner{
+    float: right;
+}
+
+.consulta-conteiner .botoes-consulta-conteiner button{
+    width: 100px;
+    padding: 10px;
+    margin: 0px 10px;
+    border-radius: 5px;
+    border: 0px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: orangered;
+}
+
+.consulta-conteiner .botoes-consulta-conteiner button:hover{
+    background-color: rgb(146, 39, 0);
+    transition: 0.2s;
+    color: white;
+}
+
+.lista-conteiner{
+    width: 90%;
+    height: 60vh;
+    background-color:cornflowerblue;
+    padding: 1% 2.5%;
+    margin: 0% 2.5%;
+    border-radius: 5px;
+    overflow: auto;
+}
+
+.lista-conteiner .resposta-conteiner{
+    background-color: aliceblue;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.lista-conteiner .resposta-conteiner button{
+    float: right;
+    margin: 0px 10px;
+    border-radius: 5px;
+    border: 0px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: greenyellow;
+}
+
+.lista-conteiner .resposta-conteiner .informacao{
+    font-weight: bold;
+    padding: 0px 10px;
+}
+
+.lista-conteiner .resposta-conteiner img{
+    width: 75px;
+    height: 75px;
+}

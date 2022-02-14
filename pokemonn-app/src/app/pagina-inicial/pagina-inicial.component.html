@@ -1,0 +1,31 @@
+<body> 
+    <div class="container-esquerdo">
+      <img src="../../assets/img-inicial/img-logo.png" alt="Logo" class="logo">
+    </div>
+    
+    <div class="container-direito">
+      <h1 class="titulo">Portal do Treinador</h1>
+        <p>Acesse detalhes dos pokemons da sua pokedex para melhor organizá-los</p>
+        <form class="formulario" (ngSubmit)="verificacao()">
+          <label name="usuario"></label>
+          <input type="text" [(ngModel)]="usuarioIn" #nameForm="ngModel" class="input-form" placeholder="Login" [ngModelOptions]="{standalone: true}"> 
+          <br>
+          <br>
+          <input type="password" [(ngModel)]="senhaIn" #pswdForm="ngModel" class="input-form" placeholder="Senha" [ngModelOptions]="{standalone: true}">
+          <br>
+          <br>
+          <div>
+            <input type="checkbox" id="conectar">
+            <span>Continuar Conectado</span>
+            &nbsp;
+            &nbsp;
+            <a onclick="">
+              <span>Esqueci minha senha</span>
+            </a>
+          </div> 
+          <br>
+          <br>
+          <button class="button-portal" type="submit">Acessar portal</button>
+        </form>
+    </div>    
+</body>

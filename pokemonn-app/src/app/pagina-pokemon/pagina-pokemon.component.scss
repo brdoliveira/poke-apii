@@ -1,0 +1,115 @@
+app-menu{
+    width: 30%;
+    position: fixed;
+    float: left;
+}
+
+.body{
+    width: 70%;
+    float: right;
+}
+
+.container-pokemon{
+    background-color: aquamarine;
+    width: 90%;
+    height: 90vh;
+    margin: 2.5% 5%;
+    border-radius: 5px;
+}
+
+.container-pokemon .imagem-pokemon{
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+
+.container-pokemon .imagem-pokemon img{
+    width: 100%;
+    height: 65vh;
+    border-radius: 10px;
+}
+
+.container-pokemon .imagem-pokemon .botao-back{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.container-pokemon .imagem-pokemon .botao-back:hover{
+    filter: invert(100%);
+    transition: 0.2s;
+}
+
+.container-pokemon .imagem-pokemon .botao-container{
+    width: 100%;
+    text-align: center;
+}
+
+.container-pokemon .imagem-pokemon .botao-container .botao-aleatorio{
+    padding: 15px 25px;
+    border: 0px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: darkblue;
+    color: white;
+}
+
+.container-pokemon .imagem-pokemon .nome-pokemon{
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.container-pokemon .descricao-pokemon{
+    height: 72vh;
+    padding: 4% 0%;
+    overflow:auto;
+}
+
+.container-pokemon .descricao-pokemon span{
+    font-weight: bold;
+}
+
+.container-pokemon .descricao-pokemon .info-pok{
+    font-weight: normal;
+    text-transform: capitalize;
+}
+
+.container-pokemon .descricao-pokemon .locais{
+    overflow: auto;
+    width: 95%;
+    padding: 5px;
+    margin: 1px;
+    height: 10vh;
+}
+
+
+.container-pokemon .descricao-pokemon .locais .info-pok{
+    font-weight: normal;
+    text-transform: capitalize;
+}
+
+.container-pokemon .descricao-pokemon .status-pokemon{
+    width: 90%;
+    height: 10vh;
+    border-radius: 5px;
+}
+
+.container-pokemon .descricao-pokemon .status-pokemon .status{
+    background-color: white;
+    width: 30%;
+    height: 10vh;
+    border-radius: 5px;
+    border: 1px solid black;
+    float: left;
+    margin: 0px 3px;
+}
+
+.container-pokemon .descricao-pokemon .status-pokemon .status .info-status{
+    text-align: center;
+    font-weight: bold;
+}
+
+.container-pokemon .descricao-pokemon .status-pokemon .status .info-status-forc{
+    text-align: center;
+}

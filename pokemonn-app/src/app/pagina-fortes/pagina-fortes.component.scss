@@ -1,0 +1,47 @@
+app-menu{
+    width: 30%;
+    position: fixed;
+    float: left;
+}
+
+.body{
+    width: 70%;
+    float: right;
+}
+
+.pokemon-forte-container{
+    margin: 2% 5%;
+    width: 90%;
+    height: 80vh;
+    background-color: blue;
+    border-radius: 20px;
+}
+
+.pokemon-forte-container .img-pokemon-forte{
+    padding: 2%;
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.pokemon-forte-container .img-pokemon-forte img{
+    width: 90%;
+    height: 95%;    
+    border-radius: 10px;
+}
+
+.pokemon-forte-container .texto-pokemon-forte{
+    width: 45%;
+    float: left;
+}
+
+.pokemon-forte-container .texto-pokemon-forte h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.pokemon-forte-container .texto-pokemon-forte p{
+    color: white;
+    font-size: 18px;
+}

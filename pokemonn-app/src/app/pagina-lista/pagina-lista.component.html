@@ -1,0 +1,38 @@
+<app-menu></app-menu>
+<div class="body">
+    <div class="nome-container">
+        <h1>Consulta de Pokémons</h1>
+        <p>Procure o seu pokemon pelo nome, assim irá trazer informações dele</p>
+    </div>
+    <br>
+    <div class="consulta-conteiner">
+        <form action="">
+            <label>Nome: </label>
+            <input type="text" class="input-form" id="pokemon">
+            <div class="botoes-consulta-conteiner">
+                <button (click)="procurarPokemon()">Procurar</button>
+                <button type="reset">Limpar</button>
+            </div>
+        </form>
+    </div>
+    <br>
+    <div class="lista-conteiner">
+        <h1>Lista dos Pokemons</h1>
+        <br>
+        <div *ngFor="let pokemon of lista">
+            <div class="resposta-conteiner">
+                <img src={{pokemon.pose}}>
+                <span>Nome: </span>
+                <span class="informacao">{{pokemon.nome}}</span>
+                <span>Hp: </span>
+                <span class="informacao" id="nome-pokemon">{{pokemon.hp}}</span>
+                <span>Ataque: </span>
+                <span class="informacao" id="nome-pokemon">{{pokemon.ataque}}</span>
+                <span>Defesa: </span>
+                <span class="informacao" id="nome-pokemon">{{pokemon.defesa}}</span>
+                <button (click)=pokemonDetalhes(pokemon.id)>Ver Detalhes</button>
+            </div>
+            <br>
+        </div>
+    </div>
+</div>
